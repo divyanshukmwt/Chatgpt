@@ -68,6 +68,7 @@ const Home = () => {
 
     const tempSocket = io("https://chatgpt-0lj9.onrender.com", {
       withCredentials: true,
+      transports:["websockets"]
     })
 
     tempSocket.on("ai-response", (messagePayload) => {
