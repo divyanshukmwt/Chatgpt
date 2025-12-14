@@ -16,7 +16,7 @@ const app = express();
 /* using middlewares */
 app.use(cors({
     origin: ['http://localhost:5173',
-        'https://chatgpt-one-liart.vercel.app/'
+        'https://chatgpt-one-liart.vercel.app'
     ],
     credentials: true
 }))

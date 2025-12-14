@@ -11,7 +11,7 @@ function initSocketServer(httpServer) {
     const io = new Server(httpServer, {
         cors: {
             origin: ["http://localhost:5173",
-                "https://chatgpt-one-liart.vercel.app/"],
+                "https://chatgpt-one-liart.vercel.app"],
             credentials: true
         }
     });
